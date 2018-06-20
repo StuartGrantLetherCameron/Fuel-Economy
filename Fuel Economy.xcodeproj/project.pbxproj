@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58443D35304D3305E85C545B /* Pods_Fuel_EconomyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */; };
 		843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFC420DA018E00B8346E /* AppDelegate.swift */; };
 		843BDFC720DA018E00B8346E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFC620DA018E00B8346E /* ViewController.swift */; };
 		843BDFCA20DA018E00B8346E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFC820DA018E00B8346E /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		843BDFCF20DA019100B8346E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */; };
 		843BDFDA20DA019100B8346E /* Fuel_EconomyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFD920DA019100B8346E /* Fuel_EconomyTests.swift */; };
 		843BDFE520DA019100B8346E /* Fuel_EconomyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */; };
+		843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFF520DA05DA00B8346E /* gascan.jpeg */; };
+		D4F5BE9B48081DD358EE24D2 /* Pods_Fuel_Economy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089A0E8A835821BA5692529C /* Pods_Fuel_Economy.framework */; };
+		F897A8485E0ABA391C6E615C /* Pods_Fuel_EconomyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		089A0E8A835821BA5692529C /* Pods_Fuel_Economy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_Economy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_EconomyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_EconomyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		712BF0E0F56B3F8E494AB085 /* Pods-Fuel Economy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Economy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy.debug.xcconfig"; sourceTree = "<group>"; };
 		843BDFC120DA018E00B8346E /* Fuel Economy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Economy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDFC420DA018E00B8346E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843BDFC620DA018E00B8346E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		843BDFE020DA019100B8346E /* Fuel EconomyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel EconomyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_EconomyUITests.swift; sourceTree = "<group>"; };
 		843BDFE620DA019100B8346E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843BDFF520DA05DA00B8346E /* gascan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gascan.jpeg; path = ../../../../gascan.jpeg; sourceTree = "<group>"; };
+		8681E0939773024E40206C14 /* Pods-Fuel EconomyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyUITests/Pods-Fuel EconomyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		880FB6C1428439E3B5254C6C /* Pods-Fuel EconomyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyTests/Pods-Fuel EconomyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C546DCAB46F6A775DC62022A /* Pods-Fuel EconomyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyTests/Pods-Fuel EconomyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E43AF936260D483C46F057B9 /* Pods-Fuel EconomyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyUITests/Pods-Fuel EconomyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE7B988811ECD0F30477D8B /* Pods-Fuel Economy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Economy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F5BE9B48081DD358EE24D2 /* Pods_Fuel_Economy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58443D35304D3305E85C545B /* Pods_Fuel_EconomyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F897A8485E0ABA391C6E615C /* Pods_Fuel_EconomyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				843BDFD820DA019100B8346E /* Fuel EconomyTests */,
 				843BDFE320DA019100B8346E /* Fuel EconomyUITests */,
 				843BDFC220DA018E00B8346E /* Products */,
+				D30AD7291107AFECA804B9F7 /* Pods */,
+				964308EF7039B84715ED975A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +116,7 @@
 		843BDFC320DA018E00B8346E /* Fuel Economy */ = {
 			isa = PBXGroup;
 			children = (
+				843BDFF220DA04BC00B8346E /* Pics */,
 				843BDFC420DA018E00B8346E /* AppDelegate.swift */,
 				843BDFC620DA018E00B8346E /* ViewController.swift */,
 				843BDFC820DA018E00B8346E /* Main.storyboard */,
@@ -125,6 +145,37 @@
 			path = "Fuel EconomyUITests";
 			sourceTree = "<group>";
 		};
+		843BDFF220DA04BC00B8346E /* Pics */ = {
+			isa = PBXGroup;
+			children = (
+				843BDFF520DA05DA00B8346E /* gascan.jpeg */,
+			);
+			path = Pics;
+			sourceTree = "<group>";
+		};
+		964308EF7039B84715ED975A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089A0E8A835821BA5692529C /* Pods_Fuel_Economy.framework */,
+				54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */,
+				108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30AD7291107AFECA804B9F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				712BF0E0F56B3F8E494AB085 /* Pods-Fuel Economy.debug.xcconfig */,
+				FDE7B988811ECD0F30477D8B /* Pods-Fuel Economy.release.xcconfig */,
+				880FB6C1428439E3B5254C6C /* Pods-Fuel EconomyTests.debug.xcconfig */,
+				C546DCAB46F6A775DC62022A /* Pods-Fuel EconomyTests.release.xcconfig */,
+				E43AF936260D483C46F057B9 /* Pods-Fuel EconomyUITests.debug.xcconfig */,
+				8681E0939773024E40206C14 /* Pods-Fuel EconomyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843BDFE920DA019100B8346E /* Build configuration list for PBXNativeTarget "Fuel Economy" */;
 			buildPhases = (
+				09ADBC87E4257DA6E8391885 /* [CP] Check Pods Manifest.lock */,
 				843BDFBD20DA018E00B8346E /* Sources */,
 				843BDFBE20DA018E00B8346E /* Frameworks */,
 				843BDFBF20DA018E00B8346E /* Resources */,
+				1E607465AACAB3F871E7829B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843BDFEC20DA019100B8346E /* Build configuration list for PBXNativeTarget "Fuel EconomyTests" */;
 			buildPhases = (
+				3992926B4E75F6EF98E21AD2 /* [CP] Check Pods Manifest.lock */,
 				843BDFD120DA019100B8346E /* Sources */,
 				843BDFD220DA019100B8346E /* Frameworks */,
 				843BDFD320DA019100B8346E /* Resources */,
@@ -167,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843BDFEF20DA019100B8346E /* Build configuration list for PBXNativeTarget "Fuel EconomyUITests" */;
 			buildPhases = (
+				C56349E53A07A113F3B8C0B2 /* [CP] Check Pods Manifest.lock */,
 				843BDFDC20DA019100B8346E /* Sources */,
 				843BDFDD20DA019100B8346E /* Frameworks */,
 				843BDFDE20DA019100B8346E /* Resources */,
@@ -229,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */,
 				843BDFCF20DA019100B8346E /* LaunchScreen.storyboard in Resources */,
 				843BDFCC20DA019100B8346E /* Assets.xcassets in Resources */,
 				843BDFCA20DA018E00B8346E /* Main.storyboard in Resources */,
@@ -250,6 +306,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09ADBC87E4257DA6E8391885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fuel Economy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E607465AACAB3F871E7829B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3992926B4E75F6EF98E21AD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fuel EconomyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56349E53A07A113F3B8C0B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fuel EconomyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		843BDFBD20DA018E00B8346E /* Sources */ = {
@@ -428,9 +559,11 @@
 		};
 		843BDFEA20DA019100B8346E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712BF0E0F56B3F8E494AB085 /* Pods-Fuel Economy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,9 +578,11 @@
 		};
 		843BDFEB20DA019100B8346E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE7B988811ECD0F30477D8B /* Pods-Fuel Economy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +597,7 @@
 		};
 		843BDFED20DA019100B8346E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880FB6C1428439E3B5254C6C /* Pods-Fuel EconomyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +618,7 @@
 		};
 		843BDFEE20DA019100B8346E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C546DCAB46F6A775DC62022A /* Pods-Fuel EconomyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +639,7 @@
 		};
 		843BDFF020DA019100B8346E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43AF936260D483C46F057B9 /* Pods-Fuel EconomyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +659,7 @@
 		};
 		843BDFF120DA019100B8346E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8681E0939773024E40206C14 /* Pods-Fuel EconomyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
