@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58443D35304D3305E85C545B /* Pods_Fuel_EconomyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */; };
+		8434027D20DC6C1300C93EAF /* GasEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434027C20DC6C1300C93EAF /* GasEntry.swift */; };
 		843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFC420DA018E00B8346E /* AppDelegate.swift */; };
 		843BDFC720DA018E00B8346E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFC620DA018E00B8346E /* ViewController.swift */; };
 		843BDFCA20DA018E00B8346E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFC820DA018E00B8346E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		843BDFDA20DA019100B8346E /* Fuel_EconomyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFD920DA019100B8346E /* Fuel_EconomyTests.swift */; };
 		843BDFE520DA019100B8346E /* Fuel_EconomyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */; };
 		843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFF520DA05DA00B8346E /* gascan.jpeg */; };
+		846C218220DC79EA006F66C7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C218120DC79EA006F66C7 /* Functions.swift */; };
 		D4F5BE9B48081DD358EE24D2 /* Pods_Fuel_Economy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089A0E8A835821BA5692529C /* Pods_Fuel_Economy.framework */; };
 		F897A8485E0ABA391C6E615C /* Pods_Fuel_EconomyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,7 @@
 		108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_EconomyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_EconomyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BF0E0F56B3F8E494AB085 /* Pods-Fuel Economy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Economy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy.debug.xcconfig"; sourceTree = "<group>"; };
+		8434027C20DC6C1300C93EAF /* GasEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasEntry.swift; sourceTree = "<group>"; };
 		843BDFC120DA018E00B8346E /* Fuel Economy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Economy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDFC420DA018E00B8346E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843BDFC620DA018E00B8346E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_EconomyUITests.swift; sourceTree = "<group>"; };
 		843BDFE620DA019100B8346E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843BDFF520DA05DA00B8346E /* gascan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gascan.jpeg; path = ../../../../gascan.jpeg; sourceTree = "<group>"; };
+		846C218120DC79EA006F66C7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		8681E0939773024E40206C14 /* Pods-Fuel EconomyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyUITests/Pods-Fuel EconomyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		880FB6C1428439E3B5254C6C /* Pods-Fuel EconomyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyTests/Pods-Fuel EconomyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C546DCAB46F6A775DC62022A /* Pods-Fuel EconomyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyTests/Pods-Fuel EconomyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				843BDFCB20DA019100B8346E /* Assets.xcassets */,
 				843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */,
 				843BDFD020DA019100B8346E /* Info.plist */,
+				8434027C20DC6C1300C93EAF /* GasEntry.swift */,
+				846C218120DC79EA006F66C7 /* Functions.swift */,
 			);
 			path = "Fuel Economy";
 			sourceTree = "<group>";
@@ -389,6 +395,8 @@
 			files = (
 				843BDFC720DA018E00B8346E /* ViewController.swift in Sources */,
 				843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */,
+				8434027D20DC6C1300C93EAF /* GasEntry.swift in Sources */,
+				846C218220DC79EA006F66C7 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
