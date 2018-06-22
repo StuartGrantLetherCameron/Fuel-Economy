@@ -17,6 +17,8 @@
 		843BDFDA20DA019100B8346E /* Fuel_EconomyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFD920DA019100B8346E /* Fuel_EconomyTests.swift */; };
 		843BDFE520DA019100B8346E /* Fuel_EconomyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */; };
 		843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFF520DA05DA00B8346E /* gascan.jpeg */; };
+		845A043720DCAB8B0092A29A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A043620DCAB8B0092A29A /* Entry.swift */; };
+		845A043920DCAE720092A29A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A043820DCAE720092A29A /* Coordinate.swift */; };
 		846C218220DC79EA006F66C7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C218120DC79EA006F66C7 /* Functions.swift */; };
 		D4F5BE9B48081DD358EE24D2 /* Pods_Fuel_Economy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089A0E8A835821BA5692529C /* Pods_Fuel_Economy.framework */; };
 		F897A8485E0ABA391C6E615C /* Pods_Fuel_EconomyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108DCE54C79765A2F6560BE3 /* Pods_Fuel_EconomyUITests.framework */; };
@@ -59,6 +61,8 @@
 		843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_EconomyUITests.swift; sourceTree = "<group>"; };
 		843BDFE620DA019100B8346E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843BDFF520DA05DA00B8346E /* gascan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gascan.jpeg; path = ../../../../gascan.jpeg; sourceTree = "<group>"; };
+		845A043620DCAB8B0092A29A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		845A043820DCAE720092A29A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		846C218120DC79EA006F66C7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		8681E0939773024E40206C14 /* Pods-Fuel EconomyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyUITests/Pods-Fuel EconomyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		880FB6C1428439E3B5254C6C /* Pods-Fuel EconomyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel EconomyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel EconomyTests/Pods-Fuel EconomyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				843BDFD020DA019100B8346E /* Info.plist */,
 				8434027C20DC6C1300C93EAF /* GasEntry.swift */,
 				846C218120DC79EA006F66C7 /* Functions.swift */,
+				845A043620DCAB8B0092A29A /* Entry.swift */,
+				845A043820DCAE720092A29A /* Coordinate.swift */,
 			);
 			path = "Fuel Economy";
 			sourceTree = "<group>";
@@ -393,10 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845A043720DCAB8B0092A29A /* Entry.swift in Sources */,
 				843BDFC720DA018E00B8346E /* ViewController.swift in Sources */,
 				843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */,
 				8434027D20DC6C1300C93EAF /* GasEntry.swift in Sources */,
 				846C218220DC79EA006F66C7 /* Functions.swift in Sources */,
+				845A043920DCAE720092A29A /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
