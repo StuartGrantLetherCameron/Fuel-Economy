@@ -28,7 +28,7 @@ class GasEntry: UIViewController {
             print("error loading db")
         }
         
-        let createTable = "CREATE TABLE IF NOT EXISTS entry_table (entry INTEGER PRIMARY KEY AUTOINCREMENT, km INTEGER, gas REAL, type INTEGER)"
+        let createTable = "CREATE TABLE IF NOT EXISTS entry_table_3 (entry INTEGER PRIMARY KEY AUTOINCREMENT, km INTEGER, gas REAL, type INTEGER, date STRING)"
         
         if sqlite3_exec(db, createTable, nil, nil, nil) != SQLITE_OK{
             print("couldnt create table")
@@ -41,7 +41,7 @@ class GasEntry: UIViewController {
     @IBAction func add(_ sender: Any) {
         var add: OpaquePointer?
         
-        let add_query = "INSERT INTO entry_table (km, gas, type) VALUES (?,?,?)"
+        let add_query = "INSERT INTO entry_table_3 (km, gas, type, date) VALUES (?,?,?,?)"
         
         if sqlite3_prepare(db, add_query, -1, &add, nil) != SQLITE_OK{
             debugPrint("couldnt prep")
@@ -63,11 +63,15 @@ class GasEntry: UIViewController {
             return
         }
         
+        if sqlite3_bind_text(add, 4, Functions().get_date(), -1, nil) != SQLITE_OK{
+            print("didnt bind text")
+        }
+        
         if sqlite3_step(add) != SQLITE_DONE{
             print("couldnt added")
             return
         }else{
-            debugPrint("added km: ", km_Input.text ?? "didnt work", " gas: ", gas_Input.text ?? "didnt work", " type: ", type_Input.selectedSegmentIndex)
+            debugPrint("added km: ", km_Input.text ?? "didnt work", " gas: ", gas_Input.text ?? "didnt work", " type: ", type_Input.selectedSegmentIndex, " date: ", Functions().get_date())
         }
     }
     

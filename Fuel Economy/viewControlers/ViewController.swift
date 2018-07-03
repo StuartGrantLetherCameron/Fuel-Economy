@@ -30,10 +30,9 @@ class ViewController: UIViewController {
         
         print(entry.count)
         print()
-        print()
         
         let cor = Functions().turn_to_coordinate(list: entry)
-    
+        
         Functions().graph(lineChart: graph, cor: cor)
         
     }
