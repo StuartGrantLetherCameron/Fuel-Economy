@@ -40,10 +40,19 @@ class Functions {
         
         var x_cor = 0.0
         var y_cor = 0.0
+        var km = 0.0
         
         for x in (0...length-2){
             x_cor = Double(x+1)
-            y_cor = (Double(list[x+1].km - list[x].km) / list[x+1].gas)
+            km = Double(list[x+1].km - list[x].km)
+                
+            if km <= 0.0 {
+                km = 1
+            }
+            
+            y_cor =  Double((list[x+1].gas / km ) * 100)
+            print(y_cor)
+            
             
             cor_list.append(Corrdinate(x: x_cor, y: y_cor))
         }
@@ -53,11 +62,15 @@ class Functions {
     func graph(lineChart: LineChartView, cor: [Corrdinate]) {
         
         let size = cor.count
+        var start = 0
+        let end = size-1
         if size < 1 {
             return
+        }else if size > 9{
+            start = size-10
         }
         
-        let values = (0...(size-1)).map { (i) -> ChartDataEntry in
+        let values = (start...(end)).map { (i) -> ChartDataEntry in
             return ChartDataEntry(x: Double(cor[i].x), y: Double(cor[i].y))
         }
         
@@ -71,8 +84,7 @@ class Functions {
     func get_date() -> String{
         let formatter = DateFormatter()
         
-        formatter.dateStyle = .long
-        formatter.timeStyle = .short
+        formatter.dateStyle = .short
         
         let date = formatter.string(from: Date())
         return date
@@ -91,5 +103,47 @@ class Functions {
             print("didnt work :(")
         }
     }
+    
+    func get_avg_km(list: [Corrdinate]) -> String {
+        var sum = 0.0
+        let length = list.count
+        var avg = 0.0
+        
+        for x in list{
+            sum += x.y
+        }
+        
+        
+        avg = Double(sum/Double(length))
+        print("this is the big averge", avg)
+        avg = round_num(num: avg)
+        print(avg, " and agin after rounded")
+        
+        return String(avg) + " L/100 Km"
+    }
+    
+    func round_num(num: Double) -> Double {
+        return Double(round(100*num)/100)
+    }
+    
+    func avg_ten(list: [Corrdinate]) -> String {
+        if list.count < 10 {
+            return "NA"
+        }
+        
+        var avg = 0.0
+        for x in (list.count-9...list.count-1){
+            avg += list[x].y
+        }
+        avg = (avg/Double(list.count))
+        avg = round_num(num: avg)
+        
+        return String(avg) + " L/100Km"
+    }
+    
+    func get_last(list: [Entry]) -> Entry {
+        return list[list.count-1]
+    }
+    
 }
 
