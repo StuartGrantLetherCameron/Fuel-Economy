@@ -63,7 +63,7 @@ class GasEntry: UIViewController {
         if km?.isEmpty == true{
             ToastView.shared.long(self.view, txt_msg: "enter km")
             return
-        }else if gas?.isEmpty == true || Int(gas!)! <= 0{
+        }else if gas?.isEmpty == true || Double(gas!)! <= 0{
             ToastView.shared.long(self.view, txt_msg: "enter gas")
             return
         }else if last_km >= Int(km!)!{
