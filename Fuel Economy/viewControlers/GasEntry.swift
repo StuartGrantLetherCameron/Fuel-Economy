@@ -35,9 +35,10 @@ class GasEntry: UIViewController {
         }
         
         let entry_list = Functions().get_all_from_table(db: db!)
-        let last_entry = Functions().get_last(list: entry_list)
-        km_Input.text = String(last_entry.km)
-        
+        if entry_list.count > 0 {
+            let last_entry = Functions().get_last(list: entry_list)
+            km_Input.text = String(last_entry.km)
+        }
     }
     
     @IBAction func add(_ sender: Any) {
@@ -45,8 +46,15 @@ class GasEntry: UIViewController {
         
         let add_query = "INSERT INTO entry_table_3 (km, gas, type, date) VALUES (?,?,?,?)"
         let entry = Functions().get_all_from_table(db: db!)
-        let last_entry = Functions().get_last(list: entry)
-        let last_km = last_entry.km
+        var last_km = 0
+        
+        if entry.count > 0 {
+            let last_entry = Functions().get_last(list: entry)
+            last_km = last_entry.km
+        }
+       
+        
+       
         
         
         let km = km_Input.text
@@ -97,6 +105,7 @@ class GasEntry: UIViewController {
     }
     
     
-    
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
