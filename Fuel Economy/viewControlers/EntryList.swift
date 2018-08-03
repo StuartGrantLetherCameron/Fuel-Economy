@@ -1,8 +1,7 @@
 //
 //  EntryList.swift
-//  Fuel Economy
-//
-//  Created by Stuart Cameron on 2018-07-02.
+//  var Fuel Economy
+//  var  Created by Stuart Cameron on 2018-07-02.
 //  Copyright © 2018 Stuart Cameron. All rights reserved.
 //
 
@@ -35,16 +34,24 @@ class EntryList: UIViewController {
             print("error loading db")
         }
         
+        
         let data = Functions().get_all_from_table(db: db!)
         
         var table_entry: [RowObj] = []
+        
+        var econ = Functions().turn_to_coordinate(list: data)
+        let null_start = Corrdinate(x: 0.0, y: 0.0)
+        
+        econ.insert(null_start, at: 0)
         
         if data.count == 0 {
             return table_entry
         }
         
+        
+        
         for x in 0...(data.count-1){
-            let temp = RowObj(image: #imageLiteral(resourceName: "gascan.png"), date: data[x].date, km: String(data[x].km) + " Km", gas: String(data[x].gas) + "L")
+            let temp = RowObj(date: data[x].date, km: String(data[x].km) + " Km", econ: String(econ[x].y), gas: String(data[x].gas) + "L")
             table_entry.insert(temp, at: 0)
         }
         

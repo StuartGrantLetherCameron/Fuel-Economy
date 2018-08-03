@@ -51,6 +51,7 @@ class Functions {
             }
             
             y_cor =  Double((list[x+1].gas / km ) * 100)
+            y_cor = Double(round_num(num: y_cor))
             print(y_cor)
             
             
@@ -86,8 +87,39 @@ class Functions {
         
         formatter.dateStyle = .short
         
-        let date = formatter.string(from: Date())
+        var date = formatter.string(from: Date())
+        
+        if date.contains("-"){
+            date = Functions().turn_to_real_date(date: date)
+        }
+        
         return date
+    }
+    
+    func turn_to_real_date(date: String) -> String {
+        var year: String
+        var month: String
+        var day: String
+        
+        month = ""
+        day = ""
+        
+        let date_list = date.components(separatedBy: "-")
+        
+        let temp_month = date_list[1]
+        let temp_day = date_list[2]
+        
+        year = String(date_list[0].suffix(2))
+        
+        if temp_month[temp_month.startIndex] == "0"{
+            month = String(temp_month.suffix(1))
+        }
+        
+        if temp_day[temp_day.startIndex] == "0" {
+            day = String(temp_day.suffix(1))
+        }
+        
+        return month + "/" + day + "/" + year
     }
     
     func drop_table(db: OpaquePointer) {

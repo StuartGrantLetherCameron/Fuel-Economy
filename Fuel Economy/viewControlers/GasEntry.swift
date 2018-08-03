@@ -52,10 +52,6 @@ class GasEntry: UIViewController {
             let last_entry = Functions().get_last(list: entry)
             last_km = last_entry.km
         }
-       
-        
-       
-        
         
         let km = km_Input.text
         let gas = gas_Input.text
@@ -101,6 +97,8 @@ class GasEntry: UIViewController {
         }else{
             debugPrint("added km: ", km_Input.text ?? "didnt work", " gas: ", gas_Input.text ?? "didnt work", " type: ", type_Input.selectedSegmentIndex, " date: ", Functions().get_date())
         }
+        
+        ToastView.shared.short(self.view, txt_msg: "Added")
         
     }
     

@@ -109,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843371C82113D19600A9D33F /* storyBords */ = {
+			isa = PBXGroup;
+			children = (
+				843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */,
+				843BDFC820DA018E00B8346E /* Main.storyboard */,
+			);
+			path = storyBords;
+			sourceTree = "<group>";
+		};
 		843BDFB820DA018E00B8346E = {
 			isa = PBXGroup;
 			children = (
@@ -134,16 +143,14 @@
 		843BDFC320DA018E00B8346E /* Fuel Economy */ = {
 			isa = PBXGroup;
 			children = (
-				843BDFC820DA018E00B8346E /* Main.storyboard */,
+				843371C82113D19600A9D33F /* storyBords */,
 				84D261A320EB2EA60034723B /* Obj */,
 				84D261A220EB2E760034723B /* viewControlers */,
 				843BDFF220DA04BC00B8346E /* Pics */,
 				846C218120DC79EA006F66C7 /* Functions.swift */,
 				843BDFCB20DA019100B8346E /* Assets.xcassets */,
-				843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */,
 				843BDFD020DA019100B8346E /* Info.plist */,
 				843BDFC420DA018E00B8346E /* AppDelegate.swift */,
-				84D261A420EB30E90034723B /* EntryCell.swift */,
 			);
 			path = "Fuel Economy";
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				845A043620DCAB8B0092A29A /* Entry.swift */,
+				84D261A420EB30E90034723B /* EntryCell.swift */,
 				845A043820DCAE720092A29A /* Coordinate.swift */,
 				84D261A820EB329F0034723B /* RowObj.swift */,
 			);
@@ -617,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
