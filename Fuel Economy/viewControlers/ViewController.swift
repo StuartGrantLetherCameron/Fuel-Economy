@@ -12,6 +12,8 @@ import Charts
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var avg_10: UILabel!
+    @IBOutlet weak var avg: UILabel!
     @IBOutlet weak var graph: LineChartView!
     
     var db: OpaquePointer?
@@ -28,12 +30,13 @@ class ViewController: UIViewController {
         
         let entry = Functions().get_all_from_table(db: db!)
         
-        print(entry.count)
-        print()
-        
         let cor = Functions().turn_to_coordinate(list: entry)
         
         Functions().graph(lineChart: graph, cor: cor)
+        
+        avg.text = Functions().get_avg_km(list: cor)
+        
+        avg_10.text = Functions().avg_ten(list: cor)
         
     }
 }

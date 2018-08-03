@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 class RowObj {
-    var image: UIImage
     var date: String
     var km: String
     var gas: String
+    var econ: String
     
-    init(image: UIImage, date: String, km: String, gas: String) {
-        self.image = image
+    init(date: String, km: String, econ: String, gas: String) {
         self.date = date
         self.km = km
+        self.econ = econ
         self.gas = gas
     }
 }

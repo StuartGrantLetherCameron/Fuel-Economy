@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hoD-50-0cN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Econemy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mf-zf-9fv">
+                                <rect key="frame" x="30" y="107" width="314" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="F39-8k-9jz"/>
+                                    <constraint firstAttribute="width" constant="314" id="rAA-aJ-Vhz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gascan.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gui-ya-xEw">
+                                <rect key="frame" x="87" y="211" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ikl-m7-oF2"/>
+                                    <constraint firstAttribute="height" constant="200" id="XjW-gM-e9V"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gui-ya-xEw" firstAttribute="top" secondItem="5mf-zf-9fv" secondAttribute="bottom" constant="8" id="9iP-za-KfD"/>
+                            <constraint firstItem="5mf-zf-9fv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="FAy-Vi-8j3"/>
+                            <constraint firstItem="hoD-50-0cN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WuF-j8-pQg"/>
+                            <constraint firstItem="hoD-50-0cN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="af9-aC-fot"/>
+                            <constraint firstItem="hoD-50-0cN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mEz-De-CXl"/>
+                            <constraint firstItem="hoD-50-0cN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rCA-Fa-KTM"/>
+                            <constraint firstItem="5mf-zf-9fv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="w3c-Pk-YJo"/>
+                            <constraint firstItem="Gui-ya-xEw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wDH-Ks-wPW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appic.jpg" width="590" height="590"/>
+        <image name="gascan.png" width="225" height="225"/>
+    </resources>
+</document>

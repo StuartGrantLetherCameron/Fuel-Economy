@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		58443D35304D3305E85C545B /* Pods_Fuel_EconomyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */; };
 		8434027D20DC6C1300C93EAF /* GasEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434027C20DC6C1300C93EAF /* GasEntry.swift */; };
+		8434ED36210A83D800096EA3 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434ED35210A83D800096EA3 /* ToastView.swift */; };
+		8435C9F720FEB862008F0B1B /* appic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8435C9F620FEB862008F0B1B /* appic.jpg */; };
+		8435C9F920FEBD6F008F0B1B /* gascan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8435C9F820FEBD6F008F0B1B /* gascan.png */; };
 		843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFC420DA018E00B8346E /* AppDelegate.swift */; };
 		843BDFCA20DA018E00B8346E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFC820DA018E00B8346E /* Main.storyboard */; };
 		843BDFCC20DA019100B8346E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFCB20DA019100B8346E /* Assets.xcassets */; };
 		843BDFCF20DA019100B8346E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */; };
 		843BDFDA20DA019100B8346E /* Fuel_EconomyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFD920DA019100B8346E /* Fuel_EconomyTests.swift */; };
 		843BDFE520DA019100B8346E /* Fuel_EconomyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */; };
-		843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843BDFF520DA05DA00B8346E /* gascan.jpeg */; };
 		844CFAF320E3470100AC57F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CFAF220E3470100AC57F6 /* ViewController.swift */; };
 		845A043720DCAB8B0092A29A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A043620DCAB8B0092A29A /* Entry.swift */; };
 		845A043920DCAE720092A29A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A043820DCAE720092A29A /* Coordinate.swift */; };
@@ -50,6 +52,9 @@
 		54B94E35B8695857EBA0606E /* Pods_Fuel_EconomyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuel_EconomyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		712BF0E0F56B3F8E494AB085 /* Pods-Fuel Economy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuel Economy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuel Economy/Pods-Fuel Economy.debug.xcconfig"; sourceTree = "<group>"; };
 		8434027C20DC6C1300C93EAF /* GasEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasEntry.swift; sourceTree = "<group>"; };
+		8434ED35210A83D800096EA3 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		8435C9F620FEB862008F0B1B /* appic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = appic.jpg; path = ../../../../../Downloads/appic.jpg; sourceTree = "<group>"; };
+		8435C9F820FEBD6F008F0B1B /* gascan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gascan.png; path = ../../../../../Downloads/gascan.png; sourceTree = "<group>"; };
 		843BDFC120DA018E00B8346E /* Fuel Economy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Economy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDFC420DA018E00B8346E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843BDFC920DA018E00B8346E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +67,6 @@
 		843BDFE020DA019100B8346E /* Fuel EconomyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fuel EconomyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDFE420DA019100B8346E /* Fuel_EconomyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_EconomyUITests.swift; sourceTree = "<group>"; };
 		843BDFE620DA019100B8346E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843BDFF520DA05DA00B8346E /* gascan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gascan.jpeg; path = ../../../../gascan.jpeg; sourceTree = "<group>"; };
 		844CFAF220E3470100AC57F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		845A043620DCAB8B0092A29A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		845A043820DCAE720092A29A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843371C82113D19600A9D33F /* storyBords */ = {
+			isa = PBXGroup;
+			children = (
+				843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */,
+				843BDFC820DA018E00B8346E /* Main.storyboard */,
+			);
+			path = storyBords;
+			sourceTree = "<group>";
+		};
 		843BDFB820DA018E00B8346E = {
 			isa = PBXGroup;
 			children = (
@@ -130,16 +143,14 @@
 		843BDFC320DA018E00B8346E /* Fuel Economy */ = {
 			isa = PBXGroup;
 			children = (
-				843BDFC820DA018E00B8346E /* Main.storyboard */,
+				843371C82113D19600A9D33F /* storyBords */,
 				84D261A320EB2EA60034723B /* Obj */,
 				84D261A220EB2E760034723B /* viewControlers */,
 				843BDFF220DA04BC00B8346E /* Pics */,
 				846C218120DC79EA006F66C7 /* Functions.swift */,
 				843BDFCB20DA019100B8346E /* Assets.xcassets */,
-				843BDFCD20DA019100B8346E /* LaunchScreen.storyboard */,
 				843BDFD020DA019100B8346E /* Info.plist */,
 				843BDFC420DA018E00B8346E /* AppDelegate.swift */,
-				84D261A420EB30E90034723B /* EntryCell.swift */,
 			);
 			path = "Fuel Economy";
 			sourceTree = "<group>";
@@ -165,7 +176,8 @@
 		843BDFF220DA04BC00B8346E /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				843BDFF520DA05DA00B8346E /* gascan.jpeg */,
+				8435C9F820FEBD6F008F0B1B /* gascan.png */,
+				8435C9F620FEB862008F0B1B /* appic.jpg */,
 			);
 			path = Pics;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 		84D261A220EB2E760034723B /* viewControlers */ = {
 			isa = PBXGroup;
 			children = (
+				8434ED35210A83D800096EA3 /* ToastView.swift */,
 				8434027C20DC6C1300C93EAF /* GasEntry.swift */,
 				84D2619E20EB25430034723B /* EntryList.swift */,
 				844CFAF220E3470100AC57F6 /* ViewController.swift */,
@@ -184,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				845A043620DCAB8B0092A29A /* Entry.swift */,
+				84D261A420EB30E90034723B /* EntryCell.swift */,
 				845A043820DCAE720092A29A /* Coordinate.swift */,
 				84D261A820EB329F0034723B /* RowObj.swift */,
 			);
@@ -321,9 +335,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843BDFF620DA05DA00B8346E /* gascan.jpeg in Resources */,
 				843BDFCF20DA019100B8346E /* LaunchScreen.storyboard in Resources */,
 				843BDFCC20DA019100B8346E /* Assets.xcassets in Resources */,
+				8435C9F920FEBD6F008F0B1B /* gascan.png in Resources */,
+				8435C9F720FEB862008F0B1B /* appic.jpg in Resources */,
 				843BDFCA20DA018E00B8346E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +443,7 @@
 				845A043720DCAB8B0092A29A /* Entry.swift in Sources */,
 				843BDFC520DA018E00B8346E /* AppDelegate.swift in Sources */,
 				84D2619F20EB25430034723B /* EntryList.swift in Sources */,
+				8434ED36210A83D800096EA3 /* ToastView.swift in Sources */,
 				84D261A520EB30E90034723B /* EntryCell.swift in Sources */,
 				84D261A920EB329F0034723B /* RowObj.swift in Sources */,
 				8434027D20DC6C1300C93EAF /* GasEntry.swift in Sources */,
@@ -609,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHZL2S2LAJ;
 				INFOPLIST_FILE = "Fuel Economy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,16 +9,18 @@
 import UIKit
 
 class EntryCell: UITableViewCell {
-    @IBOutlet weak var gasImg: UIImageView!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var km: UILabel!
     @IBOutlet weak var gas: UILabel!
+    @IBOutlet weak var econ: UILabel!
+    
     
     func setRow(row: RowObj) {
-        gasImg.image = row.image
         date.text = row.date
         km.text = row.km
+        econ.text = row.econ
         gas.text = row.gas
+        
     }
     
 }

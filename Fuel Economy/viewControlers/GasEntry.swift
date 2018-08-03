@@ -34,14 +34,38 @@ class GasEntry: UIViewController {
             print("couldnt create table")
         }
         
-        debugPrint("everything worked !!!")
-        
+        let entry_list = Functions().get_all_from_table(db: db!)
+        if entry_list.count > 0 {
+            let last_entry = Functions().get_last(list: entry_list)
+            km_Input.text = String(last_entry.km)
+        }
     }
     
     @IBAction func add(_ sender: Any) {
         var add: OpaquePointer?
         
         let add_query = "INSERT INTO entry_table_3 (km, gas, type, date) VALUES (?,?,?,?)"
+        let entry = Functions().get_all_from_table(db: db!)
+        var last_km = 0
+        
+        if entry.count > 0 {
+            let last_entry = Functions().get_last(list: entry)
+            last_km = last_entry.km
+        }
+        
+        let km = km_Input.text
+        let gas = gas_Input.text
+        
+        if km?.isEmpty == true{
+            ToastView.shared.long(self.view, txt_msg: "enter km")
+            return
+        }else if gas?.isEmpty == true || Double(gas!)! <= 0{
+            ToastView.shared.long(self.view, txt_msg: "enter gas")
+            return
+        }else if last_km >= Int(km!)!{
+            ToastView.shared.long(self.view, txt_msg: "enter more km then last time!")
+        }
+        
         
         if sqlite3_prepare(db, add_query, -1, &add, nil) != SQLITE_OK{
             debugPrint("couldnt prep")
@@ -73,9 +97,13 @@ class GasEntry: UIViewController {
         }else{
             debugPrint("added km: ", km_Input.text ?? "didnt work", " gas: ", gas_Input.text ?? "didnt work", " type: ", type_Input.selectedSegmentIndex, " date: ", Functions().get_date())
         }
+        
+        ToastView.shared.short(self.view, txt_msg: "Added")
+        
     }
     
     
-    
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

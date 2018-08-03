@@ -1,15 +1,17 @@
 //
 //  EntryList.swift
-//  Fuel Economy
-//
-//  Created by Stuart Cameron on 2018-07-02.
+//  var Fuel Economy
+//  var  Created by Stuart Cameron on 2018-07-02.
 //  Copyright © 2018 Stuart Cameron. All rights reserved.
 //
 
 import UIKit
+import SQLite3
 
 class EntryList: UIViewController {
 
+    var db: OpaquePointer?
+    
     @IBOutlet weak var tableView: UITableView!
     
     var rowObj: [RowObj] = []
@@ -24,29 +26,55 @@ class EntryList: UIViewController {
     }
     
     func createRowArray() -> [RowObj] {
-        var temp: [RowObj] = []
         
-        let temp0 = RowObj(image: #imageLiteral(resourceName: "gascan.jpeg"), date: "hello", km: "400 Km" , gas: "22.56 L")
-
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
-        temp.append(temp0)
+        let dirctery = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask,
+                                                    appropriateFor: nil, create: false).appendingPathComponent("km_database.sqlite")
         
-        return temp
+        if sqlite3_open(dirctery.path, &db) != SQLITE_OK{
+            print("error loading db")
+        }
+        
+        
+        let data = Functions().get_all_from_table(db: db!)
+        
+        var table_entry: [RowObj] = []
+        
+        var econ = Functions().turn_to_coordinate(list: data)
+        let null_start = Corrdinate(x: 0.0, y: 0.0)
+        
+        econ.insert(null_start, at: 0)
+        
+        if data.count == 0 {
+            return table_entry
+        }
+        
+        
+        
+        for x in 0...(data.count-1){
+            let temp = RowObj(date: data[x].date, km: String(data[x].km) + " Km", econ: String(econ[x].y), gas: String(data[x].gas) + "L")
+            table_entry.insert(temp, at: 0)
+        }
+        
+        return table_entry
     }
 }
 
 
 extension EntryList: UITableViewDataSource, UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rowObj.count
+        
+        let dirctery = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask,
+                                                    appropriateFor: nil, create: false).appendingPathComponent("km_database.sqlite")
+        
+        if sqlite3_open(dirctery.path, &db) != SQLITE_OK{
+            print("error loading db")
+            return 10
+        }
+        
+        let data = Functions().get_all_from_table(db: db!)
+        print("adding ", data.count, " rows")
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
