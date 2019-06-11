@@ -12,6 +12,7 @@ import Charts
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var enterGas: UIButton!
     @IBOutlet weak var avg_10: UILabel!
     @IBOutlet weak var avg: UILabel!
     @IBOutlet weak var graph: LineChartView!
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let black = UIColor.black
+        Functions().make_border(button: enterGas, color: black.cgColor)
         
         let dirctery = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask,
                                                     appropriateFor: nil, create: false).appendingPathComponent("km_database.sqlite")

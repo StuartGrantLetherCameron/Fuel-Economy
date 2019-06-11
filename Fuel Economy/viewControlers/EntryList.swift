@@ -39,7 +39,7 @@ class EntryList: UIViewController {
         
         var table_entry: [RowObj] = []
         
-        var econ = Functions().turn_to_coordinate(list: data)
+        var econ = Functions().turn_to_coordinate_for_table(list: data)
         let null_start = Corrdinate(x: 0.0, y: 0.0)
         
         econ.insert(null_start, at: 0)
@@ -51,8 +51,15 @@ class EntryList: UIViewController {
         
         
         for x in 0...(data.count-1){
-            let temp = RowObj(date: data[x].date, km: String(data[x].km) + " Km", econ: String(econ[x].y), gas: String(data[x].gas) + "L")
-            table_entry.insert(temp, at: 0)
+            if (econ[x].y != 0.0){
+                let temp = RowObj(date: data[x].date, km: String(data[x].km) + " Km", econ: String(econ[x].y), gas: String(data[x].gas) + "L")
+                table_entry.insert(temp, at: 0)
+            }else {
+                let temp = RowObj(date: data[x].date, km: String(data[x].km) + " Km", econ: "NA", gas: String(data[x].gas) + "L")
+                table_entry.insert(temp, at: 0)
+            }
+            
+            
         }
         
         return table_entry
@@ -87,4 +94,9 @@ extension EntryList: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        
+    }
 }

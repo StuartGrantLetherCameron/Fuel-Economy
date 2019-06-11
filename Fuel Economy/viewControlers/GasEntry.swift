@@ -14,12 +14,18 @@ class GasEntry: UIViewController {
     @IBOutlet weak var km_Input: UITextField!
     @IBOutlet weak var gas_Input: UITextField!
     @IBOutlet weak var type_Input: UISegmentedControl!
+    @IBOutlet weak var add: UIButton!
+    @IBOutlet weak var back: UIButton!
     
     
     var db: OpaquePointer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let light_blue = UIColor(cgColor: #colorLiteral(red: 0.2358028956, green: 0.5207193841, blue: 0.9472755393, alpha: 1))
+        Functions().make_border(button: add, color: light_blue.cgColor)
+        Functions().make_border(button: back, color: light_blue.cgColor)
         
         let dirctery = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask,
                                                     appropriateFor: nil, create: false).appendingPathComponent("km_database.sqlite")
@@ -55,15 +61,31 @@ class GasEntry: UIViewController {
         
         let km = km_Input.text
         let gas = gas_Input.text
+
+        
+        if let valid_gas = Double(gas!){
+            print(valid_gas)
+        }else{
+            ToastView.shared.long(self.view, txt_msg: "enter gas")
+            return
+        }
+        
+        if let valid_km = Int(km!){
+            print(valid_km)
+        }else{
+            ToastView.shared.long(self.view, txt_msg: "enter km")
+            return
+        }
         
         if km?.isEmpty == true{
             ToastView.shared.long(self.view, txt_msg: "enter km")
             return
-        }else if gas?.isEmpty == true || Double(gas!)! <= 0{
+        }else if gas?.isEmpty == true {
             ToastView.shared.long(self.view, txt_msg: "enter gas")
             return
         }else if last_km >= Int(km!)!{
             ToastView.shared.long(self.view, txt_msg: "enter more km then last time!")
+            return
         }
         
         

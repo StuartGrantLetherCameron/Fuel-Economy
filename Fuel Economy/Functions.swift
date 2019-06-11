@@ -28,6 +28,13 @@ class Functions {
         return entry_list
     }
     
+    func make_border(button: UIButton, color: CGColor){
+        button.layer.borderWidth = 1;
+        button.layer.cornerRadius = 5;
+        button.layer.borderColor = color
+        
+    }
+    
     func turn_to_coordinate(list: [Entry]) -> [Corrdinate] {
         var cor_list = [Corrdinate] ()
         
@@ -43,22 +50,64 @@ class Functions {
         var km = 0.0
         
         for x in (0...length-2){
-            x_cor = Double(x+1)
-            km = Double(list[x+1].km - list[x].km)
+            if (list[x].gas > 0.5){
+                x_cor = x_cor+1
+                km = Double(list[x+1].km - list[x].km)
                 
-            if km <= 0.0 {
-                km = 1
+                if km <= 0.0 {
+                    km = 1
+                }
+                
+                y_cor =  Double((list[x+1].gas / km ) * 100)
+                y_cor = Double(round_num(num: y_cor))
+                print(y_cor)
+                
+                
+                cor_list.append(Corrdinate(x: x_cor, y: y_cor))
             }
-            
-            y_cor =  Double((list[x+1].gas / km ) * 100)
-            y_cor = Double(round_num(num: y_cor))
-            print(y_cor)
-            
-            
-            cor_list.append(Corrdinate(x: x_cor, y: y_cor))
         }
         return cor_list
     }
+    
+    
+    func turn_to_coordinate_for_table(list: [Entry]) -> [Corrdinate] {
+        var cor_list = [Corrdinate] ()
+        
+        let length = list.count
+        
+        if length < 2 {
+            return cor_list
+        }
+        
+        
+        var x_cor = 0.0
+        var y_cor = 0.0
+        var km = 0.0
+        
+        for x in (0...length-2){
+            if (list[x].gas >= 0.0){
+                x_cor = Double(x+1)
+                km = Double(list[x+1].km - list[x].km)
+                
+                if km <= 0.0 {
+                    km = 1
+                }
+                
+                y_cor =  Double((list[x+1].gas / km ) * 100)
+                y_cor = Double(round_num(num: y_cor))
+                print(y_cor)
+                
+                
+                cor_list.append(Corrdinate(x: x_cor, y: y_cor))
+            }else{
+                x_cor = Double(x+1)
+                y_cor = 0.0
+                cor_list.append(Corrdinate(x: x_cor, y: y_cor))
+            }
+        }
+        return cor_list
+    }
+    
     
     func graph(lineChart: LineChartView, cor: [Corrdinate]) {
         
